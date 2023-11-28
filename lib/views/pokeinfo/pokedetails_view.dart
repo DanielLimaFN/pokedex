@@ -103,24 +103,19 @@ class PokemonDetailsView extends StatelessWidget {
                         const SizedBox(
                           height: 24,
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text(
-                              "Habilidade 1: ${pokeInfo.abilities?[0].ability?.name}",
-                              style: GoogleFonts.outfit(
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 16,
-                                  color: Colors.white),
-                            ),
-                            Text(
-                              "Habilidade 2: ${pokeInfo.abilities?[1].ability?.name}",
-                              style: GoogleFonts.outfit(
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 16,
-                                  color: Colors.white),
-                            ),
-                          ],
+                        Text(
+                          "Habilidade 1: ${pokeInfo.abilities?[0].ability?.name}",
+                          style: GoogleFonts.outfit(
+                              fontWeight: FontWeight.w300,
+                              fontSize: 16,
+                              color: Colors.white),
+                        ),
+                        Text(
+                          "Habilidade 2: ${pokeInfo.abilities?[1].ability?.name}",
+                          style: GoogleFonts.outfit(
+                              fontWeight: FontWeight.w300,
+                              fontSize: 16,
+                              color: Colors.white),
                         ),
                       ],
                     ),
